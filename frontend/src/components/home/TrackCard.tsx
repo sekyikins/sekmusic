@@ -31,6 +31,7 @@ export default function TrackCard({ track, onSelect, size = "sm", animate = fals
             src={track.thumbnail}
             alt={track.title}
             fill
+            loading="eager"
             sizes={isLarge ? "80px" : "64px"}
             className="object-cover group-hover:scale-110 transition-transform duration-500"
           />

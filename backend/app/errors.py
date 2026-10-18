@@ -29,4 +29,6 @@ def friendly_error(exc: object) -> str:
         )
     if re.search(r"video unavailable|private video|removed", line, re.I):
         return "This video is unavailable, private, or removed."
+    if re.search(r"getaddrinfo failed|Name or service not known|Temporary failure in name resolution|DNS|connection timed out|network is unreachable|no internet|failed to resolve", line, re.I):
+        return "Network error while fetching media. Please check your internet connection and try again."
     return line or "yt-dlp failed"

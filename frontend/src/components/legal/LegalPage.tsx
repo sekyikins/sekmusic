@@ -18,7 +18,7 @@ export default function LegalPage({ title, sections }: LegalPageProps) {
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white">{title}</h1>
 
         <div className="space-y-6 text-sm sm:text-base leading-relaxed">
-          <p>Last updated: {new Date().toLocaleDateString()}</p>
+          <p>Last updated: 08/25/2026</p>
 
           {sections.map((section) => (
             <section key={section.heading}>

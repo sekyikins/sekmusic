@@ -37,7 +37,7 @@ export default function AudioPlayer() {
       {!audioReady && (
         <div className="absolute inset-0 z-20 flex items-center justify-center gap-2 text-xs font-medium text-fg-soft bg-panel-strong backdrop-blur-sm rounded-2xl">
           {mediaError ? (
-            <span className="text-danger-soft px-4 text-center">{mediaError}</span>
+            <span className="text-danger-soft px-4 text-center wrap-break-word max-h-16 overflow-auto">{mediaError}</span>
           ) : (
             <>
               <Loader2 className="w-4 h-4 animate-spin text-brand-soft" />

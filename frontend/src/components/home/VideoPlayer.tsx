@@ -36,7 +36,7 @@ export default function VideoPlayer() {
       {!videoReady && (
         <div className="absolute inset-3 z-20 flex items-center justify-center gap-2 text-sm font-medium text-fg-soft bg-panel-strong backdrop-blur-sm rounded-2xl">
           {mediaError ? (
-            <span className="text-danger-soft px-4 text-center">Video unavailable</span>
+            <span className="text-danger-soft px-4 text-center break-words max-h-20 overflow-auto">{mediaError}</span>
           ) : (
             <>
               <Loader2 className="w-4 h-4 animate-spin text-brand-soft" />
